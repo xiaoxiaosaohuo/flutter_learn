@@ -50,9 +50,12 @@ Route _createRoute(BuildContext parentContext, String image) {
 Tween<RelativeRect> _createTween(BuildContext context) {
   var windowSize = MediaQuery.of(context).size;
   var box = context.findRenderObject() as RenderBox;
-  var rect = box.localToGlobal(Offset.zero) & box.size;
+  var offset = box.localToGlobal(Offset.zero);
+  var rect =  offset & box.size;
+  ///获取当前box的offset然后和其box.size 运用操作符‘&’，得到一个react实例，
+  /// 例如 (0,0,100,100) 就是调用了Rect.fromLTWH(dx, dy, width, height) 方法
   var relativeRect = RelativeRect.fromSize(rect, windowSize);
-
+  /// 创建一个更友好的展开效果，看起来是在当前box逐渐放大
   return RelativeRectTween(
     begin: relativeRect,
     end: RelativeRect.fill,

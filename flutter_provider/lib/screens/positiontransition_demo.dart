@@ -19,12 +19,12 @@ class _PTState extends State<PTDemo>
 
     RelativeRectTween rectTween=  RelativeRectTween(
       begin: RelativeRect.fromLTRB(
-        100.0,///l child.left 到此left边的距离为0
-        100.0,///t child.top的距离到此rect.top的距离为0
-        100.0,///r child.right的距离到此rect.rignt的距离为0
+        100.0,///l child.left 到此left边的距离为100
+        100.0,///t child.top的距离到此rect.top的距离为100
+        100.0,///r child.right的距离到此rect.rignt的距离为100
         100.0,///t child.bottom到此rect.bottom边的距离为100
       ),
-      end: const RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+      end: RelativeRect.fill,
     );
 
     animation = rectTween.animate(controller);
@@ -51,6 +51,8 @@ class _PTState extends State<PTDemo>
           PositionedTransition( //这玩意必须作为Stack的子widget
             rect: animation,
             child:Container(
+              width: 100,
+              height: 100,
               decoration: BoxDecoration(
                   color: Colors.red,
                   border: Border.all(

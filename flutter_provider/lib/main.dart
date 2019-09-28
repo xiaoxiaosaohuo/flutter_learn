@@ -6,7 +6,9 @@ import 'package:flutter_provider/models/catalog.dart';
 import 'package:flutter_provider/screens/cart.dart';
 import 'package:flutter_provider/screens/catalog.dart';
 import 'package:flutter_provider/screens/focus_image.dart';
-
+import 'package:flutter_provider/screens/positiontransition_demo.dart';
+import 'package:flutter_provider/screens/expand_card.dart';
+import 'package:flutter_provider/screens/carsousel.dart';
 void main() {
   runApp(MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Provider Demo',
         theme: appTheme,
-        home: FocusImageDemo(),        
+        home: CarouselDemo(),        
       );
   }
 }
