@@ -9,6 +9,8 @@ import 'package:flutter_provider/screens/focus_image.dart';
 import 'package:flutter_provider/screens/positiontransition_demo.dart';
 import 'package:flutter_provider/screens/expand_card.dart';
 import 'package:flutter_provider/screens/carsousel.dart';
+import 'package:flutter_provider/screens/squence_animation.dart';
+import 'package:flutter_provider/screens/swipe_card.dart';
 void main() {
   runApp(MyApp());
 }
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Provider Demo',
         theme: appTheme,
-        home: CarouselDemo(),        
+        home: CardSwipeDemo(),        
       );
   }
 }
