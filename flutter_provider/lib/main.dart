@@ -11,6 +11,8 @@ import 'package:flutter_provider/screens/expand_card.dart';
 import 'package:flutter_provider/screens/carsousel.dart';
 import 'package:flutter_provider/screens/squence_animation.dart';
 import 'package:flutter_provider/screens/swipe_card.dart';
+import 'package:flutter_provider/screens/provider_demo.dart';
+import 'package:flutter_provider/screens/inherited_counter.dart';
 void main() {
   runApp(MyApp());
 }
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Provider Demo',
         theme: appTheme,
-        home: CardSwipeDemo(),        
+        home: InheritedCounter(),        
       );
   }
 }
