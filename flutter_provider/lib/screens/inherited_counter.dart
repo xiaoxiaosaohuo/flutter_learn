@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InheritedCounter extends StatelessWidget {
+  static String routeName = '/provider/InheritedCounter';
+  
   const InheritedCounter({Key key}) : super(key: key);
 
   @override

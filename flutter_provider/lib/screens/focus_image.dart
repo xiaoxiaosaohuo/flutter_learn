@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FocusImageDemo extends StatelessWidget {
-  static String routeName = '/misc/focus_image';
+  static String routeName = '/animate/focus_image';
 
   Widget build(BuildContext context) {
     return Scaffold(

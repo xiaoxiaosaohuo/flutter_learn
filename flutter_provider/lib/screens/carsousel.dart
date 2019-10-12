@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
 class CarouselDemo extends StatelessWidget {
-  static String routeName = '/misc/carousel';
+  static String routeName = '/animate/carousel';
 
   static const List<String> fileNames = [
     'assets/1.jpg',

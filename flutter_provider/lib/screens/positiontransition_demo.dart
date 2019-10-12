@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 //循环放大和缩小效果
 class PTDemo extends StatefulWidget {
+   static String routeName = '/animate/PTDemo';
+
   @override
   _PTState createState() => _PTState();
 }

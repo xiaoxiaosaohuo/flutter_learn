@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TweenSequenceDemo extends StatefulWidget {
-  static const String routeName = '/basics/chaining_tweens';
+  static const String routeName = '/animate/chaining_tweens';
 
   @override
   _TweenSequenceDemoState createState() => _TweenSequenceDemoState();

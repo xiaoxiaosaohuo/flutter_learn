@@ -10,6 +10,8 @@ class User {
 var currentUser = User('siven');
 class ProviderDemo extends StatelessWidget{
 
+  static String routeName = '/provider/ProviderDemo';
+
   @override
   Widget build(BuildContext context){
     return Scaffold(

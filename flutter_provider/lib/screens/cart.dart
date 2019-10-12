@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:flutter_provider/models/cart.dart';
 
 class MyCart extends StatelessWidget {
+  static const String routeName = '/provider/MyCart';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
