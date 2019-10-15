@@ -92,7 +92,7 @@ final allRoutes = <String, WidgetBuilder>{
 };
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
-    print(providerDemoRoutes);
+    print( MapEntry('d.route', 'd.builder'));
     return MaterialApp(
       title: 'Demos',
       theme: appTheme,
